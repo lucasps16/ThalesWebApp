@@ -5,8 +5,6 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThalesWebApp", "ThalesWebApp.csproj", "{25B0C46D-7D22-42C1-A006-62BD5F4E2D6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThalesWebAppXUnit", "..\ThalesWebAppXUnit\ThalesWebAppXUnit.csproj", "{1A164141-FD4E-4404-9746-C78DF4C468F1}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{25B0C46D-7D22-42C1-A006-62BD5F4E2D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25B0C46D-7D22-42C1-A006-62BD5F4E2D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25B0C46D-7D22-42C1-A006-62BD5F4E2D6C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1A164141-FD4E-4404-9746-C78DF4C468F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A164141-FD4E-4404-9746-C78DF4C468F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1A164141-FD4E-4404-9746-C78DF4C468F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1A164141-FD4E-4404-9746-C78DF4C468F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

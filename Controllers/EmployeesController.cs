@@ -67,7 +67,7 @@ namespace ThalesWebApp.Controllers
                 dynamic data = GetDynamicObj(jsonRes);
                 if(data.data == null)
                 {
-                    throw new HttpRequestException("404");
+                    throw new HttpRequestException();
                 }
                 EmployeeModel employee = new EmployeeModel();
                 employee.id = data.data["id"];
@@ -79,6 +79,10 @@ namespace ThalesWebApp.Controllers
                 employees.Add(employee);
                 int a = 0;
                 return employees;
+            }
+            catch (HttpRequestException http_ex)
+            {
+                throw http_ex;
             }
             catch (Exception ex)
             {
@@ -104,10 +108,7 @@ namespace ThalesWebApp.Controllers
                 else
                 {
                     employees = GetEmployeeList().Result;
-                    if (employees == null)
-                    {
-                        return View("~/Views/Error/Index.cshtml");
-                    }
+
                 }
 
                 EmployeeListModel model = new EmployeeListModel
