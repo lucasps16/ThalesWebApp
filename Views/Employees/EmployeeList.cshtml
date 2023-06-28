@@ -1,0 +1,44 @@
+﻿@model EmployeeListModel
+
+@{
+    ViewData["Title"] = "Employees";
+}
+
+<h1>Employees</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Anual Salary</th>
+            <th>Age</th>
+            <th>Profile Image</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Employees) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.employee_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.employee_salary)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.employee_anual_salry)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.employee_age)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.profile_image)
+                </td>
+            </tr>
+}
+    </tbody>
+</table>
