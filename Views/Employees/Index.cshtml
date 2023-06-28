@@ -1,7 +1,15 @@
-﻿<h1>Thales - Employees</h1>
+﻿<head>
+    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Content/bootstrap.min.js")"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Thales - Employees</h1>
+    <p class="text-md-left">Type the employee Id to search for their information or leave the field empty to get a complete list of all the employees.</p>
+    <form method="post" asp-action="Search">
+        <label for="id">ID: </label>
+        <input type="number" name="id" id="id">
+        <button type="submit">Search</button>
+    </form>
 
-<form method="post" asp-action="Search">
-    <label for="id">ID: </label>
-    <input type="number" name="id" id="id">
-    <button type="submit">Search</button>
-</form>
+</body>

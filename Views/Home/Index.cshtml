@@ -8,30 +8,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <h2>Employee List</h2>
+    <h1>Thales - Employees</h1>
 
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Salary</th>
-            <th>Age</th>
-            <th>Profile Image</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var employee in Model)
-        {
-            <tr>
-                <td>@employee.id</td>
-                <td>@employee.employee_name</td>
-                <td>@employee.employee_salary</td>
-                <td>@employee.employee_age</td>
-                <td>@employee.profile_image</td>
-            </tr>
-        }
-    </tbody>
-</table>
+<form method="post" asp-action="Search">
+    <label for="id">ID: </label>
+    <input type="number" name="id" id="id">
+    <button type="submit">Search</button>
+</form>
 
 </body>
